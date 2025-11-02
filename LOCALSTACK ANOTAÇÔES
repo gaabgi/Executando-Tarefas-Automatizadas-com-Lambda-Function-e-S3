@@ -1,0 +1,8 @@
+localstack: ferramenta open source que simula os serviços da AWS localmente, ou seja, permite que você teste e desenvolva aplicações AWS no seu computador, sem precisar se conectar à nuvem real.
+Funciona para quase todos os serviços, mas não todos.
+
+Definição: cria um ambiente AWS falso (emulado), onde você pode rodar serviços como S3, Lambda, DynamoDB, API Gateway, CloudFormation, SQS, SNS, Step Functions, etc., localmente. 
+Tudo dentro de containers Docker.
+
+Serve para desenvolver e testar infraestrutura como código (IaC) (ex: Terraform, CloudFormation), para Rodar scripts AWS CLI / SDK localmente, para criar pipelines CI/CD sem custos de AWS reais.
+Simular funcionamento de aplicações serverless (Lambdas, eventos SNS/SQS, etc.), aprender aws sem custo real.
