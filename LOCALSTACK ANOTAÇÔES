@@ -6,3 +6,22 @@ Tudo dentro de containers Docker.
 
 Serve para desenvolver e testar infraestrutura como código (IaC) (ex: Terraform, CloudFormation), para Rodar scripts AWS CLI / SDK localmente, para criar pipelines CI/CD sem custos de AWS reais.
 Simular funcionamento de aplicações serverless (Lambdas, eventos SNS/SQS, etc.), aprender aws sem custo real.
+
+Versão Community vs. Pro
+
+Community (Open Source): É a versão gratuita e de código aberto. Ela cobre a grande maioria dos serviços principais que 90% dos desenvolvedores usam no dia a dia (S3, Lambda, DynamoDB, SQS, SNS, etc.). É perfeita para a maioria dos testes locais.
+Pro (Paga): É uma versão que exige uma licença. Ela inclui recursos mais avançados e serviços mais complexos, como:
+Serviços mais "enterprise" (Ex: simulação de EKS - Kubernetes, Redshift, etc.).
+Um "Dashboard" (interface gráfica) para você ver os recursos que criou localmente (ex: ver o conteúdo de um bucket S3 no navegador).
+Simulação mais fiel de IAM (permissões).
+Suporte técnico dedicado.
+
+Arquitetura
+
+Roda em Docker (padrão)
+Usa endpoints locais (porta 4566)
+Integra com AWS CLI, boto3, Terraform, CDK, etc.
+Pode ser executado via:
+docker run
+docker-compose
+localstack CLI (instalando com pip install localstack)
